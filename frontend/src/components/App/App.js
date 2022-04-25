@@ -7,7 +7,7 @@ import LibraryService from "../../repository/LibraryRepository";
 import {Component} from "react";
 import {BrowserRouter as Router, Redirect, Route} from "react-router-dom";
 import  BookEdit from "../Book/BookEdit/bookEdit";
-
+import  Categories from "../Category/categories"
 class App extends Component {
     constructor(props) {
         super(props);
@@ -25,6 +25,9 @@ class App extends Component {
                 <Header/>
                 <main>
                     <div className={"container"}>
+
+                        <Route path={"/categories"} exact render={() =>
+                            <Categories categories={this.state.categories}/>}/>
 
                         <Route path={"/books/add"} exact render={() =>
                             <BookAdd authors={this.state.authors}
