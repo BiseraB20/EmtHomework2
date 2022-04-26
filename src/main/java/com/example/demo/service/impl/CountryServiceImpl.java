@@ -15,6 +15,6 @@ public class CountryServiceImpl implements CountryService {
 
     @Override
     public Country save(String name, String contient) {
-     return    this.countryRepositroy.save(new Country(name,contient));
+        return this.countryRepositroy.save(new Country(name,contient));
     }
 }
