@@ -1,7 +1,7 @@
 import axios from "axios";
 //tuka kje vrzeme se za axios
 const instance = axios.create({
-    baseURL: 'http://localhost:9091/api',
+    baseURL: 'https://emt-homework-frontend.herokuapp.com//api',
     headers: {
         'Access-Control-Allow-Origin' : '*'
     }
