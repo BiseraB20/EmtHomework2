@@ -48,7 +48,7 @@ class App extends Component {
                                    onMarkAsTaken={this.onMarkAsTaken}
                                    book={this.state.selectedBook}
                             />}/>
-                    {/*<Redirect to={"/books"}/>*/}
+                    <Redirect to={"/books"}/>
                     </div>
                 </main>
             </Router>
